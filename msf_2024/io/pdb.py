@@ -5,7 +5,9 @@ Functions for pdb files
 import numpy as np
 
 def open_pdb(f_loc):
-    # This function reads in a pdb file and returns the atom names and coordinates.
+    """
+    This function reads in a pdb file and returns the atom names and coordinates.
+    """
     with open(f_loc) as f:
         data = f.readlines()
     c = []

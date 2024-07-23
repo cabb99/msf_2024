@@ -1,11 +1,16 @@
+"""
+Handles visualization functions
+"""
+
 import matplotlib.pyplot as plt
 from .atom_data import atom_colors
 import numpy as np
 
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
-    
-    # Draw a picture of a molecule using matplotlib.
-    
+    """
+    Draws a picture of a molecule using matplotlib.
+    """
+
     # Create figure
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
@@ -36,9 +41,11 @@ def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi
     return ax
 
 def bond_histogram(bond_list, save_location=None, dpi=300, graph_min=0, graph_max=2):
-    # Draw a histogram of bond lengths based on a bond_list (output from build_bond_list function)
-    
-    
+    """
+    Plots an histogram using matplotlib
+    Draw a histogram of bond lengths based on a bond_list (output from build_bond_list function)
+    """
+
     lengths = []
     for atoms, bond_length in bond_list.items():
         lengths.append(bond_length)
