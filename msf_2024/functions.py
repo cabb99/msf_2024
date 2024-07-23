@@ -23,6 +23,7 @@ def canvas(with_attribution=True):
         quote += "\n\t- Adapted from Henry David Thoreau"
     return quote
 
+
 import numpy as np
 
 if __name__ == "__main__":

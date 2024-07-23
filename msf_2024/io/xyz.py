@@ -19,6 +19,9 @@ def write_xyz(file_location, symbols, coordinates):
     Write an xyz file given a file location, symbols, and coordinates.
     """
     num_atoms = len(symbols)
+
+    if len(symbols)!=len(coordinates):
+        raise ValueError(f"The number of coordinates ({len(coordinates)}) != number of symbols ({len(symbols)})")
     
     with open(file_location, 'w+') as f:
         f.write('{}\n'.format(num_atoms))
