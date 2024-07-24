@@ -1,7 +1,11 @@
 from .measure import calculate_distance
+from typing import Sequence
 
-
-def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
+def build_bond_list(
+    coordinates,
+    max_bond: float = 1.5,
+    min_bond: float = 0
+):
     """
     Find the bonds in a molecule (set of coordinates) based on distance criteria.
     """
