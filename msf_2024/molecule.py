@@ -12,6 +12,8 @@ def build_bond_list(
     bonds = {}
     num_atoms = len(coordinates)
 
+    if max_bond < 0:
+        raise ValueError
     for atom1 in range(num_atoms):
         for atom2 in range(atom1, num_atoms):
             distance = calculate_distance(coordinates[atom1], coordinates[atom2])
