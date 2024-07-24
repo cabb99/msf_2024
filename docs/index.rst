@@ -6,6 +6,12 @@
 Welcome to msf_2024's documentation!
 =========================================================
 
+Molecool is a python package for making waffles.
+It has functions for reading `xyz` and `pdb` formats.
+Demonstrates best practices for molecule software design.
+And serves waffles on the first of Octember.
+
+
 .. grid:: 1 1 2 2
 
     .. grid-item-card:: Getting Started
@@ -64,7 +70,7 @@ Welcome to msf_2024's documentation!
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
    :titlesonly:
 
